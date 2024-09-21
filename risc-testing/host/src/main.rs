@@ -33,15 +33,15 @@ fn main() -> Result<(), Box<dyn std::error::Error>>  {
     let journal = receipt.journal.bytes.clone();
 
     // Save the seal and journal to a file.
-    let _savedfile : () = match std::fs::write("./seal.json", seal) {
-        Ok(_) => (),
-        Err(e) => panic!("Failed to write file: {}", e),
-    };
+    // let _savedfile : () = match std::fs::write("./seal.json", seal) {
+    //     Ok(_) => (),
+    //     Err(e) => panic!("Failed to write file: {}", e),
+    // };
 
-    let _savedfile2 : () = match std::fs::write("./journal.json", journal) {
-        Ok(_) => (),
-        Err(e) => panic!("Failed to write file: {}", e),
-    };
+    // let _savedfile2 : () = match std::fs::write("./journal.json", journal) {
+    //     Ok(_) => (),
+    //     Err(e) => panic!("Failed to write file: {}", e),
+    // };
 
     Ok(())
 
